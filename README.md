@@ -1,9 +1,8 @@
 ### Mastering Flutter
 
-This article series for those who already know Flutter, but want to deepen the knowledge on practical examples
+This article series is for those who already know Flutter but want to deepen their knowledge through practical examples
 
 #### WidgetState • [article](https://medium.com/@pomis172/mastering-widgetstate-in-flutter-3-22-45f715014bfc), [source](/lib/widget_state/)
-
 - What can be resolved using it
 - WidgetStateController
 - Creating a widget with a custom style that utilizes WidgetStateProperties

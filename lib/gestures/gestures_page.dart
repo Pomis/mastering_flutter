@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mastering_flutter/gestures/custom_button.dart';
+import 'package:mastering_flutter/gestures/custom_scale_detector.dart';
 import 'package:mastering_flutter/gestures/custom_tap_detector.dart';
 import 'package:mastering_flutter/gestures/hit_test_behavior_example.dart';
+import 'package:mastering_flutter/gestures/pan_detector.dart';
+import 'package:mastering_flutter/gestures/transform_scale_detector.dart';
 
 class GesturesPage extends StatelessWidget {
   const GesturesPage({super.key});
@@ -9,6 +12,9 @@ class GesturesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Gesture Detector Example"),
+      ),
       body: SafeArea(
         child: Column(
           children: [
@@ -21,20 +27,20 @@ class GesturesPage extends StatelessWidget {
                 color: Colors.red,
               ),
             ),
-            // PanDetector(
-            //   child: Container(
-            //     height: 300,
-            //     width: 300,
-            //     color: Colors.black12,
-            //   ),
-            // ),
+            PanDetector(
+              child: Container(
+                height: 100,
+                width: 300,
+                color: Colors.black12,
+              ),
+            ),
             CustomGestureButton(
               onTap: () => print("Tapped"),
             ),
-            const SizedBox(height: 100),
-            // const CustomScaleDetector(),
             const SizedBox(height: 20),
-            // const TransformScaleDetector(),
+            const CustomScaleDetector(),
+            const SizedBox(height: 20),
+            const TransformScaleDetector(),
             HitTestBehaviorExample(),
           ],
         ),
