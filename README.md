@@ -1,6 +1,6 @@
-### Mastering Flutter
-
-This article series is for those who already know Flutter but want to deepen their knowledge through practical examples
+### What is it?
+Code examples for the article series Mastering Flutter.
+Made for those who already know Flutter but want to deepen their knowledge through practical examples
 
 #### WidgetState • [article](https://medium.com/@pomis172/mastering-widgetstate-in-flutter-3-22-45f715014bfc), [source](/lib/widget_state/)
 - What can be resolved using it
@@ -9,10 +9,11 @@ This article series is for those who already know Flutter but want to deepen the
 
 #### Shapes and Clipping • [article](https://medium.com/stackademic/mastering-shapes-and-clipping-in-flutter-7c7caee5bcba), [source](/lib/shapes/)
 - What are Shapes and Boxes?
+- ShapeBorder
+- BoxBorder
+- OutlinedBorder
+- InputBorder
 - Custom ShapeBorder implementation
-- Clippers in use
-- Custom Clipper
-
 
 #### ButtonStyle • [article](https://medium.com/@pomis172/mastering-buttonstyle-in-flutter-95bbec3147fb), [source](/lib/button_style/)
 - Shape, text, and background
